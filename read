@@ -1,0 +1,13 @@
+HBaseSearch包：
+ErrorData是过滤数据展示，直接运行就行
+TrackBack是轨迹重现，输入开始时间和结束时间还有车的Eid，查询结果是按时间排列的：地点 ，经度，纬度
+Sys是系统加分项，按时间段查询某个路口过车，输入为开始时间，结束时间，地点Id，输出为时间和车辆Eid
+
+spark包：
+Count是过车统计，输入为PlaceId，输出为过车数量
+MeetCar是spark加分项，输入为车辆Eid，输出为本车的Eid和相遇车辆的Eid和相遇次数
+
+
+注：时间输入格式
+2017-6-1 0：0：0
+yyyy-MM-dd HH:mm:ss 
